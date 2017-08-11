@@ -10,15 +10,15 @@
     <body>
         <div class="main">
             <div class="as">
-                <a href="maguaplayer.html" class="a1">音乐</a>
-                <a href="../photos/maguaphotos.html"  class="a2">图片</a>
-                <a href="../list/magualist.html"  class="a3">清单</a>
-                <a href="../homepage/MaGua.html"  class="a4">首页</a>
+                <a href="maguaplayer.html" class="cursor">音乐</a>
+                <a href="../photos/maguaphotos.html"  class="cursor">图片</a>
+                <a href="../list/magualist.html"  class="cursor">清单</a>
+                <a href="../homepage/MaGua.html"  class="cursor">首页</a>
             </div>
             <div class="musicList">
-                <div class = 'music' data-path = 'mp3/1.mp3'>Oh Wonder - Drive</div>
-                <div class = 'music' data-path = 'mp3/2.mp3'>Linying - Silver City</div>
-                <div class = 'music' data-path = 'mp3/3.mp3'>Owl City - The Saltwater Room</div>
+                <div class = 'music cursor' data-path = 'mp3/1.mp3'>Oh Wonder - Drive</div>
+                <div class = 'music cursor' data-path = 'mp3/2.mp3'>Linying - Silver City</div>
+                <div class = 'music cursor' data-path = 'mp3/3.mp3'>Owl City - The Saltwater Room</div>
             </div>
 
             <audio id='id-audio-player'  src="mp3/1.mp3" data-path="mp3/1.mp3"></audio >
@@ -30,17 +30,15 @@
                </div>
 
                <div class="operationList">
-                   <button id='id-button-last' class="cb l"><</button>
-                   <button id='id-button-control' class="cb c">&#9658;</button>
-                   <button id='id-button-next' class="cb n">></button>
+                   <button id='id-button-last' class="cut controlbutton last cursor" data-n='-1'><</button>
+                   <button id='id-button-control' class="controlbutton c cursor">&#9658;</button>
+                   <button id='id-button-next' class="cut controlbutton next cursor" data-n='1'>></button>
 
-                   <button id="id-button-oder" data-state="0" class="ob">
+                   <button id="id-button-oder" data-state="0" class="ob cursor">
                        循环
                    </button>
                </div>
           </div>
-
-
         </div>
         <div class="background"></div>
         <script src ="js/maguaplayer.js"></script>
